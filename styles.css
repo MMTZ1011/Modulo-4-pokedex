@@ -1,0 +1,154 @@
+/* TITULO WIP */
+.title {
+    text-align: center; 
+    font-size: 3em; 
+    font-weight: bold; 
+    margin-top: 30px; 
+    color: #ff4500; 
+    font-family: 'Arial', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+    background: linear-gradient(90deg, rgba(255, 69, 0, 1) 0%, rgba(255, 140, 0, 1) 100%); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+}
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* TODO lo que tiene que ver con busqueda */
+.barra-busqueda {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+#busqueda-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #ffcc00;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#busqueda-input:focus {
+    border-color: #ff9900;
+}
+
+#boton-busqueda {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* TARJETAS POKEMON */
+.pokemon-listas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pokemon-tarjeta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pokemon-tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-tarjeta-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pokemon-tarjeta-info {
+    text-align: center;
+}
+
+.pokemon-tarjeta-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pokemon-tarjeta-type {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo del modal */
+.modal {
+    display: none; /* Por defecto, está oculto */
+    position: fixed; /* Fijado en la ventana del navegador */
+    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Anchura total de la ventana */
+    height: 100%; /* Altura total de la ventana */
+    overflow: auto; /* Añade scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrará el modal en la ventana */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 500px; /* Ancho máximo del modal */
+    border-radius: 8px;
+}
+
+/* Botón de cierre del modal */
+.cerrar-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilo del botón de cierre del modal al pasar el ratón */
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

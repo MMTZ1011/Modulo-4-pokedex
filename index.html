@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Dex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título de la página -->
+    <h1 class="title">Pokedex</h1>
+
+    <!-- Barra de búsqueda de pokemones -->
+    <div class="barra-busqueda">
+        <input type="text" id="busqueda-input" placeholder="Buscar Pokémon..." autocomplete="off" />
+        <button id="boton-busqueda">Buscar</button>
+    </div>
+
+    <!-- Contenedor de la lista de todos los pokemones -->
+    <div class="pokemon-listas" id="pokemon-listas">
+        <!-- Aquí irán las tarjetas de los pokemones -->
+    </div>
+
+    <!-- Modal para mostrar detalles del Pokémon al dar clic -->
+    <div id="pokemon-modal" class="modal">
+        <div class="modal-content"> 
+            <span class="cerrar-modal">X</span>
+            <div class="modal-body">
+                <h3 id="modal-pokemon-nombre">Nombre del Pokémon</h3>
+                <img id="modal-pokemon-imagen" src="" alt="Imagen del Pokémon">
+                <p id="modal-pokemon-tipos">Tipos: </p>
+                <p id="modal-pokemon-peso">Peso: </p>
+                <p id="modal-pokemon-altura">Altura: </p>
+                <p id="modal-pokemon-habilidades">Habilidades: </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="pokemones.js"></script>
+</body>
+</html>
