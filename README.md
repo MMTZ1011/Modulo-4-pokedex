@@ -27,4 +27,4 @@ Puedes ver una demostración en vivo del proyecto [aquí](#). *(Incluye el enlac
    git clone https://github.com/tu_usuario/tu_repositorio.git
 
 
-![Pokédex](Modulo-4-pokedex\imagen_asset1.png
+![Pokédex](assets/Modulo-4-pokedex/imagen_asset1.png
