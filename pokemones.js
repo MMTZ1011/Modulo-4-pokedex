@@ -1,4 +1,10 @@
+
+
+// configuracion
+
 const limite_pokemoncillos = 151; //151
+
+
 
 class Pokemon { 
 
@@ -155,6 +161,8 @@ const Buscar_Pokemon = () => {
         }
     });
 }
+
+
 
 
 
